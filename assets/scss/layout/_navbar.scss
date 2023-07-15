@@ -37,11 +37,7 @@
     }
   }
 
-  @media (max-width: 575px) {
-    input[type="search"] {
-      min-width: auto;
-    }
-
+  @media (max-width:991px) {
     .nav-item {
       &::after {
         content: '';
@@ -52,6 +48,12 @@
         height: 2px;
         background-color: $primary;
       }
+    }
+  }
+
+  @media (max-width: 575px) {
+    input[type="search"] {
+      min-width: auto;
     }
   }
 }
