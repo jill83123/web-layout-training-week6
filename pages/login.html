@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入 | 7TAO七逃</title>
+</head>
+
+<body>
+    <header class="mb-12">
+        <%- include('./layout/navbar'); -%>
+    </header>
+    <main class="login">
+        <div class="container mb-11">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="text-center mb-5">
+                        <img src="../assets/images/sparkler.png" alt="sparkler" class="pay-sparkler mb-5">
+                        <h2 class="title-second-font fs-5 fw-bold">會員登入</h2>
+                    </div>
+                    <form action="#" id="pay-info-form" class="d-flex flex-column needs-validation" novalidate>
+                        <label class="form-label mb-6">
+                            <p class="d-block mb-1">帳號</p>
+                            <input type="text" name="name" placeholder="請輸入帳號"
+                                class="form-control bg-transparent position-relative" required />
+                            <div class="invalid-feedback position-absolute button-0">請輸入帳號</div>
+                        </label>
+                        <label class="form-label mb-8">
+                            <p class="d-block mb-1">密碼</p>
+                            <input type="password" name="email" placeholder="請輸入密碼"
+                                class="form-control bg-transparent position-relative" required />
+                            <div class="invalid-feedback position-absolute button-0">請輸入密碼</div>
+                        </label>
+                            <button type="submit" class="btn btn-primary d-block w-100 mb-2 py-5 py-sm-2 fs-6 text-nowrap mx-auto">
+                                登入
+                                <i class="icofont-rounded-double-right"></i>
+                            </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+</body>
+
+</html>

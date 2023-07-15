@@ -1,0 +1,23 @@
+.event-detail-photo {
+    max-height: 598px;
+    object-fit: cover;
+}
+
+.date-line {
+    width: 100px;
+    height: 2px;
+    transform: rotate(120deg);
+    background-color: $primary;
+
+    @media (max-width:991px) {
+        width: 75px;
+    }
+
+    @media (max-width:767px) {
+        width: 50px;
+    }
+}
+
+.evrnt-detail-contant {
+    background-color: #EBEAE8;
+}

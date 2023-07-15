@@ -1,0 +1,6 @@
+.btn-primary,
+.btn-outline-primary {
+    &:hover, &:active, &:focus-visible {
+        color: $secondary!important;
+    }
+}

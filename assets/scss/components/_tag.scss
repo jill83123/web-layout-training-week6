@@ -1,0 +1,12 @@
+.tag {
+    border-left: 4px solid $primary;
+    border-right: 1px solid $primary;
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+
+    &:hover {
+        color: white;
+        background-color: $primary;
+        border-left: 4px solid $secondary;
+    }
+}

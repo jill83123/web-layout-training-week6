@@ -1,0 +1,32 @@
+.pay-state {
+    span {
+        background: url(../images/noise.png) #F3F1E5;
+    }
+
+    i{
+        line-height: 1;
+    }
+
+    .active {
+        color: $secondary;
+        background: none;
+        background-color: $primary;
+    }
+
+    .line::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        margin: 0 12px;
+        height: 1px;
+        background-color: $primary;
+        z-index: -1;
+    }
+}
+
+.pay-sparkler {
+    width: 32px;
+    height: auto;
+}

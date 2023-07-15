@@ -1,0 +1,21 @@
+*, *::after, *::before{
+    border-radius: 0 !important;
+}
+
+.form-check-input[type=radio]{
+    border-radius: 50%!important;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 ,p{
+    margin-bottom: 0;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;
+}

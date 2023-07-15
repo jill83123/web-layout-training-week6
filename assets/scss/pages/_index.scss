@@ -1,0 +1,125 @@
+.banner {
+  height: 518px;
+  background: url(../images/event/13.jpg) no-repeat center center/cover;
+
+  @media (max-width:991px) {
+    height: 350px;
+  }
+}
+
+.discover-list {
+  img {
+    width: 80px;
+    height: auto;
+  }
+
+  li {
+    transition: .3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  @media (max-width:575px) {
+    img {
+      width: 40px;
+    }
+  }
+}
+
+.online-event-img {
+  object-fit: cover;
+  max-height: 317px;
+}
+
+//跑馬燈
+@keyframes scroll {
+  from {
+    transform: translateX(100%)
+  }
+
+  to {
+    transform: translateX(-100%)
+  }
+}
+
+@keyframes scroll-2 {
+  from {
+    transform: translateX(0%)
+  }
+
+  to {
+    transform: translateX(-200%)
+  }
+}
+
+.news-ticker {
+  .news-ticker-item {
+    animation: scroll 120s linear infinite;
+
+    &:nth-child(2) {
+      animation: scroll-2 120s linear infinite;
+      animation-delay: -60s;
+    }
+  }
+
+  span {
+    letter-spacing: 0.1em;
+  }
+}
+
+.album {
+
+  li {
+    transition: 1s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  img {
+    aspect-ratio: 1 / 1;
+    max-height: 274px;
+    object-fit: cover;
+
+  }
+
+  .album-tag {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-4deg);
+    padding: 8px 16px;
+    font-weight: bold;
+    font-family: $title-second-font;
+    background-color: $white;
+  }
+}
+
+.transform-2 {
+  transform: rotate(2deg)
+}
+
+.transform-n2 {
+  transform: rotate(-2deg)
+}
+
+.subscribe input {
+  padding: 14px 24px;
+}
+
+.subscribe {
+  .subscribe-us {
+    margin-left: -2px;
+  }
+
+  @media (max-width:991px) {
+    flex-direction: column;
+
+    .subscribe-us {
+      margin-left: 0;
+    }
+  }
+}
