@@ -18,11 +18,13 @@
   }
 
   @media (max-width: 991px) {
+
+    //border
     &::after {
       top: 68px;
       height: 2px;
     }
-
+    
     img {
       height: 40px;
     }
@@ -32,13 +34,19 @@
       height: 38px;
     }
 
-    .nav-item {
-      border-bottom: 1px solid $primary;
+    input[type="search"] {
+      min-width: auto;
     }
-  }
 
-  @media (max-width:991px) {
-    .nav-item {
+    .navbar-collapse {
+      position: absolute;
+      z-index: 1;
+      top: 105%;
+      left: 0;
+      right: 0;
+      background: url(../images/noise.png) #F3F1E5;
+      padding: 0 5%;
+
       &::after {
         content: '';
         position: absolute;
@@ -48,12 +56,6 @@
         height: 2px;
         background-color: $primary;
       }
-    }
-  }
-
-  @media (max-width: 575px) {
-    input[type="search"] {
-      min-width: auto;
     }
   }
 }
